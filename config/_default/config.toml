@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "picode.netlify.app"
 title = "求余的博客"
 theme = "zzo"
 
