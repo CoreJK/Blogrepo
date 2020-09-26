@@ -2,16 +2,16 @@
   identifier = "about"
   name = "关于我"
   url = "about"
-  weight = 1
+  weight = 3
 
 [[main]]
   identifier = "archive"
-  name = "历史文章"
+  name = "历史笔记"
   url = "archive"
   weight = 2
 
 [[main]]
   identifier = "posts"
-  name = "文章"
+  name = "笔记"
   url = "posts"
-  weight = 3
+  weight = 1

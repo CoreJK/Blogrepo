@@ -1,10 +1,8 @@
 +++
 date = "2019-08-20T15:56:26+08:00"
-menu = "main"
 categories = ["渗透学习笔记"]
 tags = ["Sql-Lib靶场通关"]
 
-banner = "banners/sqlmap_bg2.jpg"
 title = "Sql-Lib第一关"
 description = "Union注入"
 images = []

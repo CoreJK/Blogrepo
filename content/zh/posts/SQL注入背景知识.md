@@ -1,10 +1,8 @@
 +++
 date = "2019-08-12T13:00:54+08:00"
-menu = "main"
 categories = ["渗透学习笔记"]
 tags = ["SQL注入笔记"]
 
-banner = "banners/security.jpg"
 title = "SQL注入基础"
 description = "Mysq数据库l注入"
 images = []
