@@ -25,9 +25,9 @@ header:
     paddingY: 0
     align: center
     title:
-      - 求余
+      - 学就🤔vans了
     subtitle:
-      - coreJK
+      - There are only two kinds of people in the world
     titleColor: 
     titleShadow: true
     titleFontSize: 44

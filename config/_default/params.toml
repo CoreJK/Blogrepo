@@ -46,8 +46,8 @@ pubPaginate = 20
 myname = "求余"
 email = "corejk@protonmail.com"
 whoami = "Web 安全，物联网"
-bioImageUrl = ""
-useGravatar = false
+bioImageUrl = "https://secure.gravatar.com/avatar/"
+useGravatar = true
 location = "银河, 火星"
 organization = "暂时没有"
 link = "https://corejk.top"
@@ -75,7 +75,7 @@ enableSidebarPostsByOrder = false
 showPoweredBy = true
 showFeedLinks = true
 showSocialLinks = true
-enableLangChange = true
+enableLangChange = false
 enableThemeChange = true
 
 # service
