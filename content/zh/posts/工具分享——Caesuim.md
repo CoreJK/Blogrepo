@@ -1,10 +1,7 @@
 +++
 date = "2019-08-14T11:37:59+08:00"
-menu = ""
-categories = ["工具分享"]
-tags = ["工作学习"]
-
-banner = "banners/Caesium.png"
+categories = ["博客"]
+tags = ["图片工具"]
 title = "离线图片压缩神器"
 description = "写博客必备工具之一"
 images = []

@@ -1,10 +1,9 @@
 +++
 date = "2019-02-24T11:35:10+08:00"
-menu = ""
-categories = ["各种折腾"]
-tags = ["Git"]
+categories = ["Git"]
+tags = ["tree"]
 
-banner = "banners/robots.jpg"
+
 title = "Git-Bash安装tree命令"
 description = "把tree命令，安装到Git-Bash中"
 images = []

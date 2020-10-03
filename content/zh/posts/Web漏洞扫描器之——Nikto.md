@@ -1,10 +1,9 @@
 +++
 date = "2019-07-22T15:39:27+08:00"
-menu = ""
-categories = ["渗透学习笔记"]
-tags = ["渗透工具"]
+categories = ["工具笔记"]
+tags = ["Nikto","信息搜集"]
 
-banner = "banners/cyber.jpg"
+
 title = "Web漏洞扫描器之——Nikto"
 description = "主动扫描工具"
 images = []

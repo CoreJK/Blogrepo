@@ -1,7 +1,7 @@
 +++
 date = "2019-08-20T15:56:26+08:00"
-categories = ["渗透学习笔记"]
-tags = ["Sql-Lib靶场通关"]
+categories = ["靶场"]
+tags = ["SQL_Lib","SQL注入"]
 
 title = "Sql-Lib第一关"
 description = "Union注入"

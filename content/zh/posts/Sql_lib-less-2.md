@@ -1,10 +1,9 @@
 +++
 date = "2019-08-21T17:29:11+08:00"
-menu = ""
-categories = ["渗透学习笔记"]
-tags = ["Sql-Lib靶场通关"]
+categories = ["靶场"]
+tags = ["SQL_Lib","SQL注入"]
 
-banner = "banners/less2.png"
+
 title = "Sql-Lib第二关"
 description = "数字型的注入题"
 images = []

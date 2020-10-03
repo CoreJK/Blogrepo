@@ -1,10 +1,9 @@
 +++
 date = "2019-08-13T10:37:42+08:00"
-menu = ""
-categories = ["渗透学习笔记"]
-tags = ["DVWA靶场通关"]
+categories = ["靶场"]
+tags = ["DVWA","SQL注入"]
 
-banner = "banners/dedsec.gif"
+
 title = "SQL注入（Union注入）"
 description = "GET - 有报错 - 单引号 - 字符型注入"
 images = []

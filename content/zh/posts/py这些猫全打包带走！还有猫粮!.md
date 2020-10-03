@@ -1,10 +1,9 @@
 +++
 date = "2019-07-22T16:01:16+08:00"
-menu = ""
-categories = ["编程学习笔记"]
-tags = ["python"]
+categories = ["python"]
+tags = ["笔记"]
 
-banner = "banners/cats.jpg"
+
 title = "这些猫全打包带走！还有猫粮！——zipfile模块"
 description = "《python让繁琐的工作自动化》笔记"
 images = []

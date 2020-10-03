@@ -1,10 +1,9 @@
 +++
 date = "2019-07-22T16:05:35+08:00"
-menu = ""
-categories = ["编程学习笔记"]
-tags = ["python"]
+categories = ["python"]
+tags = ["笔记"]
 
-banner = "banners/robots.jpg"
+
 title = "让python去翻“垃圾”——遍历文件夹"
 description = "《python让繁琐的工作自动化》笔记"
 images = []

@@ -1,11 +1,9 @@
 +++
 date = "2020-05-29T9:40:20+08:00"
-menu = ""
-categories = ["编程学习笔记"]
-tags = ["python"]
+categories = ["python"]
+tags = ["ffmpeg","笔记"]
 
-banner = "banners/python.jpg"
-title = "python脚本编写笔记"
+title = "bilibili缓存音视频合并脚本"
 description = "这一次编写脚本，总结了一些实用的经验，以及一些应该改进的习惯"
 images = []
 

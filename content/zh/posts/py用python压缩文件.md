@@ -1,10 +1,9 @@
 +++
 date = "2019-07-22T16:05:02+08:00"
-menu = ""
-categories = ["编程学习笔记"]
-tags = ["python"]
+categories = ["python"]
+tags = ["笔记"]
 
-banner = "banners/gift.jpg"
+
 title = "用python压缩文件"
 description = "《python让繁琐的工作自动化》笔记"
 images = []
@@ -38,7 +37,7 @@ while True:
 	if not os.path.exists(zipFilename):
 		break
 	number = number + 1
-``` 
+```
 ③ \#TODO: 以 'w' 新建一个压缩文件，用 ② 的 zipFilename 命名
 ```
 with zipfile.ZipFile(zipFilename, 'w') as backZip:

@@ -1,10 +1,9 @@
 +++
 date = "2020-02-27T19:57:54+08:00"
-menu = ""
-categories = ["各种折腾"]
-tags = ["linux"]
+categories = ["linux"]
+tags = ["Screen","系统工具"]
 
-banner = "banners/screen.jpg"
+
 title = "Screen命令的基础用法"
 description = "Linux多命令行管理工具"
 images = []

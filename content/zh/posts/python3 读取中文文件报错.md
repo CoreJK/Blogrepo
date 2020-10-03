@@ -1,10 +1,9 @@
 +++
 date = "2019-07-22T16:06:07+08:00"
-menu = ""
-categories = ["编程学习笔记"]
-tags = ["python"]
+categories = ["python"]
+tags = ["笔记"]
 
-banner = "banners/question-mark.jpg"
+
 title = "python3 读取中文文件报错"
 description = "《python让繁琐的工作自动化》笔记"
 images = []

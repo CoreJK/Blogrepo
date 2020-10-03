@@ -1,7 +1,7 @@
 +++
 date = "2019-08-12T13:00:54+08:00"
-categories = ["渗透学习笔记"]
-tags = ["SQL注入笔记"]
+categories = ["渗透测试"]
+tags = ["OWS-TOP10","sql注入","笔记"]
 
 title = "SQL注入基础"
 description = "Mysq数据库l注入"

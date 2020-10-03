@@ -1,13 +1,12 @@
 +++
 date = "2019-07-22T16:07:25+08:00"
-menu = ""
-categories = ["编程学习笔记"]
-tags = ["python"]
+categories = ["python"]
+tags = ["笔记"]
 
-banner = "banners/code-python.jpg"
 title = "os模块之——isfile、isdir、exists"
 description = "《python让繁琐的工作自动化》笔记"
 images = []
+
 +++
 
 昨天学到 os 模块中的两个函数<br>

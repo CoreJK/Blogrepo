@@ -1,13 +1,12 @@
 +++
 date = "2019-04-13T22:38:04+08:00"
-menu = ""
-categories = ["渗透学习笔记"]
-tags = ["DVWA靶场通关"]
+categories = ["靶场"]
+tags = ["DVWA","win10"]
 
-banner = "banners/linux.jpg"
 title = "window10部署DVWA靶场"
 description = "靶场搭建"
 images = []
+
 +++
 
 # 前言

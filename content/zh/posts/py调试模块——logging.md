@@ -1,10 +1,9 @@
 +++
 date = "2019-07-22T15:53:16+08:00"
-menu = ""
-categories = ["编程学习笔记"]
-tags = ["python"]
+categories = ["python"]
+tags = ["笔记"]
 
-banner = "banners/数据.jpg"
+
 title = "调试模块——logging"
 description = "《python让繁琐的工作自动化》笔记"
 images = []

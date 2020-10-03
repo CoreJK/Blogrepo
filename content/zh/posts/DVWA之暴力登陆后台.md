@@ -1,10 +1,8 @@
 +++
 date = "2019-04-13T22:38:16+08:00"
-menu = ""
-categories = ["渗透学习笔记"]
-tags = ["DVWA靶场通关"]
+categories = ["靶场"]
+tags = ["DVWA"]
 
-banner = "banners/hacker.jpg"
 title = "DVWA之暴力登陆后台"
 description = ""
 images = []

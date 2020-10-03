@@ -1,10 +1,9 @@
 +++
 date = "2019-02-25T11:35:10+08:00"
-menu = ""
-categories = ["编程学习笔记"]
-tags = ["python"]
+categories = ["python"]
+tags = ["pip3"]
 
-banner = "banners/jeep.jpg"
+
 title = "如何升级pip3"
 description = "如何正确升级pip2和pip3"
 images = []

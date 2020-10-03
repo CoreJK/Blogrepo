@@ -1,10 +1,9 @@
 +++
 date = "2020-02-05T19:36:26+08:00"
-menu = ""
-categories = ["渗透学习笔记"]
-tags = ["XSS跨站脚本漏洞"]
+categories = ["渗透测试"]
+tags = ["OWS-TOP10","xss","笔记"]
 
-banner = "banners/xssb.jpg"
+
 title = "xss学习笔记——反射型"
 description = "如何发现，并验证xss跨站脚本漏洞的存在"
 images = []

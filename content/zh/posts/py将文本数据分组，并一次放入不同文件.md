@@ -1,10 +1,9 @@
 +++
 date = "2019-07-27T20:42:53+08:00"
-menu = ""
-categories = ["编程学习笔记"]
-tags = ["python"]
+categories = ["python"]
+tags = ["笔记"]
 
-banner = "banners/storage.jpg"
+
 title = "将文本数据分组，并一次放入不同文件"
 description = "python处理文本数据"
 images = []

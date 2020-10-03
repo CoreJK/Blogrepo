@@ -1,10 +1,9 @@
 +++
 date = "2020-02-28T17:07:08+08:00"
-menu = ""
-categories = ["各种折腾"]
-tags = ["Linux"]
+categories = ["Linux"]
+tags = ["kali linux","系统时间"]
 
-banner = "banners/dtime.png"
+
 title = "kali_Linux 修改系统时区"
 description = "修改系统时区的两个方法"
 images = []

@@ -1,10 +1,7 @@
 +++
 date = "2020-03-08T10:08:54+08:00"
-menu = ""
-categories = ["渗透学习笔记"]
-tags = ["DVWA靶场通关"]
-
-banner = "banners/sql封面.jpg"
+categories = ["工具笔记"]
+tags = ["sql注入","Burpsuit"]
 
 title = "Sql 盲注好帮手，Burpsuit"
 description = "Burpsuite 盲注出 cmd5 数据"

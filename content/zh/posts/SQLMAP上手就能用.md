@@ -1,10 +1,9 @@
 +++
 date = "2019-04-13T22:38:24+08:00"
-menu = ""
-categories = ["渗透学习笔记"]
-tags = ["渗透工具"]
+categories = ["工具笔记"]
+tags = ["sqlmap"]
 
-banner = "banners/矩阵.jpg"
+
 title = "sqlmap上手就能用"
 description = "SQL注入工具"
 images = []

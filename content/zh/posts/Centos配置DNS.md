@@ -1,19 +1,19 @@
 +++
 date = "2019-04-28T08:05:51+08:00"
-menu = ""
-categories = ["各种折腾"]
-tags = ["Linux"]
+categories = ["Linux"]
+tags = ["centoos", "网络"]
 
-banner = "banners/网络.jpg"
+
 title = "Centos配置DNS"
 description = "linux网络配置问题"
-images = [""]
 +++
 
 # 前言
-折腾vps的时候，遇到了网路配置方面的问题。<br>
-参考下方链接里大佬的博客里的方法，得以解决<br/>
-[老左博客](https://www.laozuo.org/6647.html)
+折腾vps的时候，遇到了网路配置方面的问题。
+
+参考下方链接里大佬的博客里的方法，得以解决
+
+老左博客](https://www.laozuo.org/6647.html)
 
 # 环境
 centos

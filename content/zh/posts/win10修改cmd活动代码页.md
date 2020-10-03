@@ -1,10 +1,9 @@
 +++
 date = "2020-03-17T19:14:17+08:00"
-menu = ""
-categories = ["各种折腾"]
-tags = ["cmd编码问题"]
+categories = ["windows"]
+tags = ["cmd","win10","编码格式"]
 
-banner = "banners/cmd_compressed.jpg"
+
 title = "win10临时修改、永久cmd编码格式的方法"
 description = "有时候cmd显示出现乱码，就需要修改相关编码、字体的设置了"
 images = []

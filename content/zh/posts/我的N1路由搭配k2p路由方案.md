@@ -1,10 +1,8 @@
 +++
 date = "2020-03-12T13:23:59+08:00"
-menu = ""
-categories = ["各种折腾"]
-tags = ["局域网组网"]
+categories = ["路由器"]
+tags = ["k2p","斐讯N1","软路由"]
 
-banner = "banners/N1.png"
 title = "我的N1旁路由设置方案之一"
 description = "k2p作为主路由，N1作为旁路路由，该如何设置呢？"
 images = []

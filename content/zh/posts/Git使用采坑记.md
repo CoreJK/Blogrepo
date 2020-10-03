@@ -1,10 +1,9 @@
 +++
 date = "2019-04-13T22:41:29+08:00"
-menu = ""
-categories = ["各种折腾"]
-tags = ["Git"]
+categories = ["Git"]
+tags = [""]
 
-banner = "banners/thought.jpg"
+
 title = "Git使用采坑记"
 description = "没有思考，照搬命令行的结果"
 images = []
