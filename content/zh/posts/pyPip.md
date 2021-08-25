@@ -1,15 +1,24 @@
-+++
-date = "2019-02-25T11:35:10+08:00"
-categories = ["python"]
-tags = ["pip3"]
+---
+title: "如何升级pip3"
+date: 2019-02-25T11:35:10+08:00
+description: "如何正确升级pip2和pip3"
+draft: false
+hideToc: false
+enableToc: true
+enableTocContent: false
+tocPosition: inner
+tocLevels: ["h2", "h3", "h4"]
+tags:
+- "python"
+- "pip"
+categories:
+- "编程语言"
+series:
+- "技术研究"
+image: 
+---
 
-
-title = "如何升级pip3"
-description = "如何正确升级pip2和pip3"
-images = []
-+++
-
-# 前景提要
+## 前景提要
 电脑里安装了python2和python3两个版本。
 为了方便在CMD里来回切换使用
 <br/>我把位于
@@ -39,7 +48,7 @@ python3 -m pip install --upgrade pip
 ```
 这样你就能正常的升级pip3了
 
-# 写在后面
+## 写在后面
 在windows下安装了python2,和python3后
 <br/>pip版本对应关系如下
 

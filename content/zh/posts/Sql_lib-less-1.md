@@ -1,13 +1,22 @@
-+++
-date = "2019-08-20T15:56:26+08:00"
-categories = ["靶场"]
-tags = ["SQL_Lib","SQL注入"]
-
-title = "Sql-Lib第一关"
-description = "Union注入"
-images = []
-
-+++
+---
+title: "Sql-Lib第一关"
+date: 2019-08-20T15:56:26+08:00
+description: "Union注入"
+draft: false
+hideToc: false
+enableToc: true
+enableTocContent: false
+tocPosition: inner
+tocLevels: ["h2", "h3", "h4"]
+tags:
+- "sql_lib"
+- "SQL注入"
+categories:
+- "渗透测试"
+series:
+- "技术研究"
+image: 
+---
 
 - 漏洞类型：GET型 - 基于报错 - 单引号 - 字符型注入
 - 目标网址（本地靶场）：http://www.sqllib.com/less-1/?id=

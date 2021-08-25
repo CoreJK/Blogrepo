@@ -1,14 +1,23 @@
-+++
-date = "2019-08-21T17:29:11+08:00"
-categories = ["靶场"]
-tags = ["SQL_Lib","SQL注入"]
-
-
-title = "Sql-Lib第二关"
-description = "数字型的注入题"
-images = []
-
-+++
+---
+title: "Sql-Lib第二关"
+date: 2019-08-21T17:29:11+08:00
+description: "数字型的注入题"
+draft: false
+hideToc: false
+enableToc: true
+enableTocContent: false
+tocPosition: inner
+tocLevels: ["h2", "h3", "h4"]
+tags:
+- "OWASP-TOP 10"
+- "sql_lib"
+- "SQL注入"
+categories:
+- "渗透测试"
+series:
+- "技术研究"
+image: 
+---
 
 - 漏洞类型：GET - Error based - intiger based
 - 目标网址（本地靶场）：http://www.sqllib.com/less-2/?id=

@@ -1,16 +1,22 @@
-+++
-date = "2019-07-22T15:53:16+08:00"
-categories = ["python"]
-tags = ["笔记"]
+---
+title: "调试模块——logging"
+date: 2019-07-22T15:53:16+08:00
+description: "《python让繁琐的工作自动化》笔记"
+draft: false
+hideToc: false
+enableToc: true
+enableTocContent: false
+tocPosition: inner
+tocLevels: ["h2", "h3", "h4"]
+tags:
+- "python"
+categories:
+- "编程语言"
+series:
+- "技术研究"
 
-
-title = "调试模块——logging"
-description = "《python让繁琐的工作自动化》笔记"
-images = []
-+++
-
-
-***
+image: 
+---
 
 # 前言
 
@@ -30,7 +36,7 @@ images = []
 
 ***
 
-# 实例
+## 实例
 
 - 实例代码功能，计算“数的阶乘”；
 
@@ -60,10 +66,10 @@ print('7! = ' + str(factorial(7)))
 
 ***
 
-# logging 日志记录模块
+## logging 日志记录模块
 
 
-## 一、基本用法
+### 一、基本用法
 
 ```
 #!python3
@@ -112,7 +118,7 @@ logging.debug('程序结束.')
 for i in rang(1, n+1):
 ```
 
-## 二、日志级别(由低到高)
+### 二、日志级别(由低到高)
 |级别|函数调用|描述|
 |:-----:|:----:|:----:|
 | DEBUG | logging.debug() |最低级别。用于小细节。通常只有在诊断问题时，你才会关心这些消息|
@@ -121,7 +127,7 @@ for i in rang(1, n+1):
 | ERROR | logging.error() | 用于记录错误，它导致程序做某事失败 |
 | CRITICAL | logging.critical() | 最高级别。用于表示致命的错误，它导致或将要导致程序完全停止工作|
 
-## 三、将debug日志写到文件中
+### 三、将debug日志写到文件中
 
 ```
 logging.basicConfig(filename='D:\\py\\Auto\\debug\\myProgramLog.txt',
@@ -130,7 +136,7 @@ logging.basicConfig(filename='D:\\py\\Auto\\debug\\myProgramLog.txt',
 ```
 将 filename 设置好后，所有 debug 消息就会写入外部的文本文件，命令行就不会显示了。
 
-## 四、调试"开关" 
+### 四、调试"开关" 
 这个功能，才是以后不用 print 来调试的正真的关键
 
 ```
@@ -140,7 +146,7 @@ logging.disable(logging.CRITICAL)
 调试完成后，取消注释，禁用所有调试信息输出。
 
 
-# 总结
+## 总结
 - logging.disable(logging.CRITICAL)，会禁止显示，当前级别，以及比当前级别低的调试信息。
 - format 可以自定义消息输出的格式
 

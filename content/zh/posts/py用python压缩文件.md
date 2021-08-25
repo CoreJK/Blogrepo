@@ -1,28 +1,36 @@
-+++
-date = "2019-07-22T16:05:02+08:00"
-categories = ["python"]
-tags = ["笔记"]
-
-
-title = "用python压缩文件"
-description = "《python让繁琐的工作自动化》笔记"
-images = []
-+++
+---
+title: "用python压缩文件"
+date: 2019-07-22T16:05:02+08:00
+description: "《python让繁琐的工作自动化》笔记"
+draft: false
+hideToc: false
+enableToc: true
+enableTocContent: false
+tocPosition: inner
+tocLevels: ["h2", "h3", "h4"]
+tags:
+- "python"
+categories:
+- "编程语言"
+series:
+- "技术研究"
+image: 
+---
 
 ![压缩文件ing.png](https://ae01.alicdn.com/kf/U7f9fe7021eae44ce9617648316d6dd206.png)
 
-# 概述
+## 概述
 上次利用 **python** 中的 **os** 模块的**<os.walk()>**成功遍历的目录树
 昨天又学到 **<zipfile>** 模块来压缩文件
 那么，两者结合起来，就能实现简单的压缩、打包文件的功能了。
 
-# 程序目的
+## 程序目的
 每执行一次，新建一个压缩文件，压缩文件名如下
 - <备份目录名>_N.zip
 - 下一次执行脚本文件，数字 N+1 
 备份的zip文件，放入back_up 文件夹中
 
-# 代码实现思路
+## 代码实现思路
 ① \#TODO: 导入 zipfile, os 模块
 ```
 #!python3
@@ -57,7 +65,7 @@ with zipfile.ZipFile(zipFilename, 'w') as backZip:
 ```
 print("[!] 备份完成.")
 ```
-# 整理代码
+## 整理代码
 ```
 #!python3
 #backupToZip.py - 备份任意目录下所有文件，到 back_up 文件夹中
@@ -98,7 +106,7 @@ if __name__ == '__main__':
 	main()
 ```
 
-# 总结
+## 总结
 - 和文件有关的操作，要记得检查**路径、文件夹或文件**是否存在、是否有**权限（r,w,x）**等
 下面这段，通常用来判断
 **文件不存在、没有权限等情况，执行 if 内的代码，要么报错，要么放心的去做其他的事情**

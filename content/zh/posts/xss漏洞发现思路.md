@@ -1,28 +1,36 @@
-+++
-date = "2020-02-05T19:36:26+08:00"
-categories = ["渗透测试"]
-tags = ["OWS-TOP10","xss","笔记"]
+---
+title: "xss学习笔记——反射型"
+date: 2020-02-05T19:36:26+08:00
+description: "如何发现，并验证xss跨站脚本漏洞的存在"
+draft: false
+hideToc: false
+enableToc: true
+enableTocContent: false
+tocPosition: inner
+tocLevels: ["h2", "h3", "h4"]
+tags:
+- "OWASP-TOP 10"
+- "xss"
+categories:
+- "渗透测试"
+series:
+- "技术研究"
+image: 
+---
 
-
-title = "xss学习笔记——反射型"
-description = "如何发现，并验证xss跨站脚本漏洞的存在"
-images = []
-
-+++
-
-# 环境
+## 环境
 
 - 靶机：dvwa
 - 测试工具：BurpSuit，HackBar, Netcat
 
 **XSS 漏洞产生的原因，和 SQL 注入有“异曲同工之妙”，所以 XSS 又称作“ HTML 注入”，都是没有对用户输入的内容，进行检查过滤而导致站点被恶意利用，或者服务器数据被窃取，那么如何发现 XSS 漏洞的存在呢**
 
-## 一、验证思路
+### 一、验证思路
 
 ① 输入的内容提交后，查找当前页面中，有无显示输入的内容<br>
 ② 输入漏洞验证代码，看是否有效
 
-## 二、漏洞验证Poc  
+### 二、漏洞验证Poc  
 
 利用 HTML 语言中的几个常见的标签，以及 javascript，可以实现验证漏洞是否存在</br>
 **例子中跳转的网页，我用的自己的路由器后台管理地址。**
@@ -115,19 +123,19 @@ generateSessionToken();
 ?> 
 ```
 
-# 总结
+## 总结
 
 通过查阅freebuff上大佬的解释
 
 > 可以看到，通过使用htmlspecialchars函数，解决了XSS，但是要注意的是，如果htmlspecialchars函数使用不当，攻击者就可以通过编码的方式绕过函数进行XSS注入，尤其是DOM型的XSS。
 
-学到的三个防御xss的函数
+学到的三个防御`xss`的函数
 
 - str_replace()
 - preg_replace()
 - htmlspecialchars()
 
-反射型 xss，各种钓鱼链接都会利用网站存在 xss 结合钓鱼页面，骗取点击，获取受害者的登陆 cookie，或者是账号密码等信息</br>
+反射型`xss`，各种钓鱼链接都会利用网站存在`xss`结合钓鱼页面，骗取点击，获取受害者的登陆 cookie ，或者是账号密码等信息</br>
 
 接下来就是如何利用xss ，获取用户登陆 cookie，以及实现键盘记录器了：D
 

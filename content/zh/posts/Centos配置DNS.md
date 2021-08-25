@@ -1,24 +1,33 @@
-+++
-date = "2019-04-28T08:05:51+08:00"
-categories = ["Linux"]
-tags = ["centoos", "网络"]
+---
+title: "Centos配置DNS"
+date: 2019-04-28T08:05:51+08:00
+description: "linux网络配置问题"
+draft: false
+hideToc: false
+enableToc: true
+enableTocContent: false
+tocPosition: inner
+tocLevels: ["h2", "h3", "h4"]
+tags:
+- "Centos"
+categories:
+- "Linux"
+series:
+- "技术研究"
+image: 
+---
 
-
-title = "Centos配置DNS"
-description = "linux网络配置问题"
-+++
-
-# 前言
+## 前言
 折腾vps的时候，遇到了网路配置方面的问题。
 
 参考下方链接里大佬的博客里的方法，得以解决
 
-老左博客](https://www.laozuo.org/6647.html)
+[老左博客](https://www.laozuo.org/6647.html)
 
-# 环境
+## 环境
 centos
 
-# 两种方法
+## 两种方法
 第一种是临时性的，重启会失效，又要手动设置；
 <br/>
 第二种是永久性的办法。<br>
@@ -32,7 +41,7 @@ centos
 
 > /etc/sysconfig/network-scripts/
 
-## 一、临时修改当前DNS
+### 一、临时修改当前DNS
 用vim打开resolv.conf文件，文件最后添加内容如图所示：
 
 > vim /etc/resolv.conf
@@ -45,7 +54,7 @@ ok，**先按ESC，然后:wq，保存退出**，reboot，等待重启。
 <br/>
 **需要重新设置，比较麻烦。**
 
-## 二、永久修改DNS方法
+### 二、永久修改DNS方法
 按照上面的方法解决不了安装软件时，提示的报错问题时，就要用最后的办法了
 
 > vim /etc/sysconfig/network-scripts/ifcfg-eth0
@@ -59,7 +68,7 @@ ok，**先按ESC，然后:wq，保存退出**，reboot，等待重启。
 
 保存退出，reboot重启机器。
 
-# 写在后面
+## 写在后面
 
 不同liunx发行系统修改的文件内容有所差异<br>
 后面遇到了，再做整理<br>

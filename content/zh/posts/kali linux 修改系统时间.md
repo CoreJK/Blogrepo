@@ -1,14 +1,21 @@
-+++
-date = "2020-02-28T17:07:08+08:00"
-categories = ["Linux"]
-tags = ["kali linux","系统时间"]
-
-
-title = "kali_Linux 修改系统时区"
-description = "修改系统时区的两个方法"
-images = []
-
-+++
+---
+title: "kali_Linux 修改系统时区"
+date: 2020-02-28T17:07:08+08:00
+description: "修改系统时区的两个方法"
+draft: false
+hideToc: false
+enableToc: true
+enableTocContent: false
+tocPosition: inner
+tocLevels: ["h2", "h3", "h4"]
+tags:
+- "kali linux"
+categories:
+- "Linux"
+series:
+- "技术研究"
+image: 
+---
 
 ## 查看当前系统时间
 

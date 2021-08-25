@@ -1,13 +1,21 @@
-+++
-date = "2019-07-22T16:03:33+08:00"
-categories = ["python"]
-tags = ["笔记"]
-
-
-title = "超级剪切板"
-description = "《python让繁琐的工作自动化》笔记"
-images = []
-+++
+---
+title: "超级剪切板"
+date: 2019-07-22T16:03:33+08:00
+description: "《python让繁琐的工作自动化》笔记"
+draft: false
+hideToc: false
+enableToc: true
+enableTocContent: false
+tocPosition: inner
+tocLevels: ["h2", "h3", "h4"]
+tags:
+- "python"
+categories:
+- "编程语言"
+series:
+- "技术研究"
+image: 
+---
 
 # 概述
 **电脑的剪切板，只能复制一样内容，然后粘贴，然后再去复制其他内容，再粘贴**

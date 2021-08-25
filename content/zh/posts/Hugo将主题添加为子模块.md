@@ -9,12 +9,11 @@ enableTocContent: false
 tocPosition: inner
 tocLevels: ["h2", "h3", "h4"]
 tags:
-- "Git"
 - "Hugo"
-series:
-- "博客"
 categories:
-- "Note"
+- "Git"
+series:
+- "工具使用"
 image:
 ---
 

@@ -1,15 +1,23 @@
-+++
-date = "2019-07-22T16:03:09+08:00"
-categories = ["python"]
-tags = ["笔记"]
+---
+title: "用行列式——理解python的列表"
+date: 2019-07-22T16:03:09+08:00
+description: "《python让繁琐的工作自动化》笔记"
+draft: false
+hideToc: false
+enableToc: true
+enableTocContent: false
+tocPosition: inner
+tocLevels: ["h2", "h3", "h4"]
+tags:
+- "python"
+categories:
+- "编程语言"
+series:
+- "技术研究"
+image: 
+---
 
-
-title = "用行列式——理解python的列表"
-description = "《python让繁琐的工作自动化》笔记"
-images = []
-+++
-
-# 前言
+## 前言
 在学习python中的“列表”这个数据结构的时候，踩了许多坑。
 
 总结一下如何处理**二维列表**
@@ -33,8 +41,8 @@ Data = [['apples','oranges','cherries','banana'], ['Alice','Bob','Carol','David'
 - 列标：0 ~ 3 是每个字符串，在内层列表中的索引下标
 
 
-# 目标：
-## 一、逐列输出（仍然是横向显示的），一列打印完后，换行继续打印
+## 目标：
+### 一、逐列输出（仍然是横向显示的），一列打印完后，换行继续打印
 
 ```
   apples Alice dogs
@@ -51,7 +59,7 @@ cherries Carol moose
 4	  print(' ')
 ```
 ---
-## 二、逐行输出，输出一行，换行继续打印
+### 二、逐行输出，输出一行，换行继续打印
 
 ```
 apples oranges cherries banana
@@ -69,11 +77,12 @@ dogs cats moose goose
 4	  print(' ')
 ```
 
-# 总结
+## 总结
 - 两段代码，其实只把第一行和第二行交换了。
 - 一句话，逐行读取先for row，逐列读取就for col !
 - 获取内层列表的下标，可以这样写
 ```
 for col in range(len(data[0])):
 ```
-#### 当然，上面的例子比较特殊，内层列表的长度都是4
+
+**当然，上面的例子比较特殊，内层列表的长度都是4**

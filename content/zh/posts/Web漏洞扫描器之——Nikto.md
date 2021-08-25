@@ -1,13 +1,22 @@
-+++
-date = "2019-07-22T15:39:27+08:00"
-categories = ["工具笔记"]
-tags = ["Nikto","信息搜集"]
-
-
-title = "Web漏洞扫描器之——Nikto"
-description = "主动扫描工具"
-images = []
-+++
+---
+title: "Web漏洞扫描器之——Nikto"
+date: 2019-07-22T15:39:27+08:00
+description: "主动扫描工具"
+draft: false
+hideToc: false
+enableToc: true
+enableTocContent: false
+tocPosition: inner
+tocLevels: ["h2", "h3", "h4"]
+tags:
+- "sqlmap"
+- "信息搜集"
+categories:
+- "渗透测试"
+series:
+- "工具使用"
+image: 
+---
 
 针对 Web Application 部分的扫描工具
 **目标均为虚拟机中靶机**
@@ -15,7 +24,7 @@ images = []
 有需要再用查看文档即可
 
 
-# 基本命令
+## 基本命令
 ```
 nikto -update
 nikto -list-plugin
@@ -23,7 +32,7 @@ nikto -list-plugin
 - 检查更新
 - 显示可用插件
 
-##  一、常用
+###  一、常用
 **扫描目标的IP或URL，端口默认为 80**
 ```
 nikto -host <IP&URL>
@@ -67,7 +76,7 @@ nikto -host 10.10.10.129 -F htm -o htm
 结果，以 html 格式输出，方便查看
 ![html](https://ae01.alicdn.com/kf/Ud4139e7f558f414abfb270696c670aeen.jpg)
 
-# 总结
+## 总结
 1. nikto 不支持填写表单验证，这意味着要测试目标站点如果有登陆验证，能获得信息比较有限。
 2. 工具返回的信息，也不一定百分百准确，要人工验证
 3. 能和 namp 结合使用

@@ -1,15 +1,24 @@
-+++
-date = "2019-08-12T13:00:54+08:00"
-categories = ["渗透测试"]
-tags = ["OWS-TOP10","sql注入","笔记"]
+---
+title: "SQL注入基础"
+date: 2019-08-12T13:00:54+08:00
+description: "Mysq数据库l注入"
+draft: false
+hideToc: false
+enableToc: true
+enableTocContent: false
+tocPosition: inner
+tocLevels: ["h2", "h3", "h4"]
+tags:
+- "OWASP-TOP 10"
+- "sql注入"
+categories:
+- "渗透测试"
+series:
+- "技术研究"
+image: 
+---
 
-title = "SQL注入基础"
-description = "Mysq数据库l注入"
-images = []
-
-+++
-
-# 前言
+## 前言
 
 拿着 SQLmap 一把梭，结果就是实战中常常被 ban ip.
 
@@ -21,7 +30,7 @@ images = []
 
 接下来的关于MySql注入学习笔记中，都会用到
 
-# 需要了解的知识、工具
+## 需要了解的知识、工具
 
 - 理解基本的 HTTP 协议
 
@@ -39,9 +48,9 @@ images = []
 
 ---
 
-# MySql 数据库
+## MySql 数据库
 
-## ① MySql 的数据库放在哪里？
+### ① MySql 的数据库放在哪里？
 
 下图是我自己的理解
 
@@ -49,11 +58,11 @@ images = []
 
 ![我的理解.jpg](https://i.loli.net/2019/08/12/CgAtlT5IDmsHpQx.jpg)
 
-## ② 数据库的结构
+### ② 数据库的结构
 
 ![结构.jpg](https://i.loli.net/2019/08/12/vZTOefXVzYqpuQr.jpg)
 
-## ③ 需要记住的一个库，三个表（重要！）
+### ③ 需要记住的一个库，三个表（重要！）
 
 **这是在 MySql 5.0 及以后版本中存在的，一个存放了所有信息的地方的数据库**（假定为上图的库一）
 
@@ -69,7 +78,7 @@ images = []
 
   
 
-##  ④ MySql 注释符号
+###  ④ MySql 注释符号
 
 - \#
 - \--
@@ -77,7 +86,7 @@ images = []
 
 **对于字符型注入，注释符必不可少。**
 
-## ⑤ MySql 查询语句
+### ⑤ MySql 查询语句
 
 **语句的构建，要根据页面的异常回显位置拼凑。**
 
@@ -94,9 +103,9 @@ images = []
 
 limit 就能发挥大作用
 
-## ⑥ MySql注入常用函数
+### ⑥ MySql注入常用函数
 
-### Ⅰ. 普通函数
+#### Ⅰ. 普通函数
 
 > database() 返回当前页面内容，使用的数据库名称
 >
@@ -106,7 +115,7 @@ limit 就能发挥大作用
 >
 > char() 转换 ASCII 数值
 
-### Ⅱ. 全局函数
+#### Ⅱ. 全局函数
 
 > @@hostname 获取主机名
 >
@@ -123,9 +132,9 @@ SELECT @@hostname,database(),@@version_compile_os
 
 还有很多，以后补充。
 
-# 工具
+## 工具
 
-## HackBar
+### HackBar
 
 Chrome, firefox浏览器中插件商店下载安装，f12开启。
 
@@ -135,6 +144,6 @@ Chrome, firefox浏览器中插件商店下载安装，f12开启。
 
 功能比较全面，支持post、cookie等注入姿势。
 
-## BurpSuit
+### BurpSuit
 
 必备神器，不多说啦

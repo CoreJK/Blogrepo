@@ -1,15 +1,23 @@
-+++
-date = "2019-07-27T20:42:53+08:00"
-categories = ["python"]
-tags = ["笔记"]
+---
+title: "将文本数据分组，并一次放入不同文件"
+date: 2019-07-27T20:42:53+08:00
+description: "python处理文本数据"
+draft: false
+hideToc: false
+enableToc: true
+enableTocContent: false
+tocPosition: inner
+tocLevels: ["h2", "h3", "h4"]
+tags:
+- "python"
+categories:
+- "编程语言"
+series:
+- "技术研究"
+image: 
+---
 
-
-title = "将文本数据分组，并一次放入不同文件"
-description = "python处理文本数据"
-images = []
-+++
-
-# 场景
+## 场景
 现在手头有这样的一个任务：
 
 - 一个文本文件内，每一行有一串 16进制 数字，一共有577行；
@@ -34,10 +42,12 @@ d3f7d3f7d3f7
 ... ...
 ```
 
+
+
 ---
 
 
-# 思路
+## 思路
 也就是说，每一个新的文本文件内，只含有100行数据
 接下来，我们需要让 python 脚本作如下的事情
 
@@ -48,8 +58,8 @@ d3f7d3f7d3f7
 
 ---
 
-# 代码实例
-## ① 将要处理的数据，读取出来；
+## 代码实例
+### ① 将要处理的数据，读取出来；
 
 ```
 #!python3
@@ -57,7 +67,7 @@ with open("stds.keys") as file:
 	all_keys = file.readlines()
 ```
 
-## ② 根据任务需要，我要先去除重复数据,降序排列，再交给接下来的函数去写入不同的新文件；
+### ② 根据任务需要，我要先去除重复数据,降序排列，再交给接下来的函数去写入不同的新文件；
 
 ```
 tmp = list(sorted(set(all_keys), reverse=True))
@@ -65,7 +75,7 @@ tmp = list(sorted(set(all_keys), reverse=True))
 separate(tmp, 100)                                           
 ```
 
-## ③ 函数中的代码，会根据列表的中的数据多少，每个文件写入多少数据，生成合理新文件数量；
+### ③ 函数中的代码，会根据列表的中的数据多少，每个文件写入多少数据，生成合理新文件数量；
 
 ```
 >>> 这里我用了logging模块来调试
@@ -101,7 +111,7 @@ def separate(key_list, write_key_num):
 
 **要记得给 fileNum + 1 ，不然文件名的后缀，就会从 0 开始 ，一直到 5，而我们需要的是 6.**
 
-# 最后整理&效果
+## 最后整理&效果
 
 ```
 #!python3

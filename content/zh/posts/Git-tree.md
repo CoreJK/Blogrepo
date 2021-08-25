@@ -1,19 +1,28 @@
-+++
-date = "2019-02-24T11:35:10+08:00"
-categories = ["Git"]
-tags = ["tree"]
+---
+title: "Git-Bash安装tree命令"
+date: 2019-02-24T11:35:10+08:00
+description: "把tree命令，安装到Git-Bash中"
+draft: false
+hideToc: false
+enableToc: true
+enableTocContent: false
+tocPosition: inner
+tocLevels: ["h2", "h3", "h4"]
+tags:
+- ""
+categories:
+- "Git"
+series:
+- "工具使用"
 
+image: 
+---
 
-title = "Git-Bash安装tree命令"
-description = "把tree命令，安装到Git-Bash中"
-images = []
-+++
-
-# 折腾起因
+## 折腾起因
 初次使用Git-Bash，想要使用tree命令来查看目录结构。
 没料到在CMD中预置的tree命令，Git-Bash中没有预置
 
-# 解决思路
+## 解决思路
 **CMD中报错**
 ```
 xx 不是内部或外部命令，也不是可运行的程序或批处理文件。

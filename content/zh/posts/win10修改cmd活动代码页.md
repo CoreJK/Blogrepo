@@ -1,22 +1,29 @@
-+++
-date = "2020-03-17T19:14:17+08:00"
-categories = ["windows"]
-tags = ["cmd","win10","编码格式"]
+---
+title: "win10临时修改、永久cmd编码格式的方法"
+date: 2020-03-17T19:14:17+08:00
+description: "有时候cmd显示出现乱码，就需要修改相关编码、字体的设置了"
+draft: false
+hideToc: false
+enableToc: true
+enableTocContent: false
+tocPosition: inner
+tocLevels: ["h2", "h3", "h4"]
+tags:
+- "CMD"
+categories:
+- "Windows"
+series:
+- "技术研究"
+image: 
+---
 
-
-title = "win10临时修改、永久cmd编码格式的方法"
-description = "有时候cmd显示出现乱码，就需要修改相关编码、字体的设置了"
-images = []
-
-+++
-
-# 前言
+## 前言
 
 有时候，运行一些命令行程序<br>
 某些字符无法正常显示，常见的就是方块，或者是火星文字<br>
 都是由于 cmd 程序的默认编码格式为 "GBK - 中文简体" 或其他编码格式，导致某些字体不能正常显示
 
-# 一、临时修改
+## 一、临时修改
 首先查看当前的活动代码页<br>
 打开 cmd 输入chcp<br>
 如果是以前从未修改过注册表，可能打开 cmd 后，输入 chcp 会提示如下
@@ -26,13 +33,13 @@ images = []
 
 解决方法如下
 
-## ① 打开注册表编辑器
+### ① 打开注册表编辑器
 
 **win + r，输入 regedit**
 
 > 计算机\HKEY_CURRENT_USER\Console\%SystemRoot%_system32_cmd.exe
 
-## ② 添加 CodePage (DWORD 32 位) 值
+### ② 添加 CodePage (DWORD 32 位) 值
 我添加的值 936 是可以显示中文的一种编码格式（GBK - 中文简体）<br>
 
 这也是 windows10 中文系统默认的<br>
@@ -67,12 +74,11 @@ images = []
 **注意！！！！**<br>
 **如果需要显示特殊字体，修改编码后仍然无法正常显示，则需要额外安装命令行字体**
 
-# 总结
+## 总结
 
 1. 修改第一个注册表后，可以临时修改活动代码页，关闭窗口，或重启系统都会修改前的
 2. 修改第二个注册表后，只要一运行 cmd 会自动修改活动代码页为 65001
 3. 如果影响某些程序运行，可以删除这第二处注册表的值
-
 
 
 

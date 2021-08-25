@@ -1,14 +1,21 @@
-+++
-date = "2020-02-27T19:57:54+08:00"
-categories = ["linux"]
-tags = ["Screen","系统工具"]
-
-
-title = "Screen命令的基础用法"
-description = "Linux多命令行管理工具"
-images = []
-
-+++
+---
+title: "Screen命令的基础用法"
+date: 2020-02-27T19:57:54+08:00
+description: "Linux多命令行管理工具"
+draft: false
+hideToc: false
+enableToc: true
+enableTocContent: false
+tocPosition: inner
+tocLevels: ["h2", "h3", "h4"]
+tags:
+- "Screen"
+categories:
+- "Linux"
+series:
+- "工具使用"
+image: 
+---
 
 # 前言
 

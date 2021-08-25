@@ -10,9 +10,9 @@ tocPosition: inner
 tocLevels: ["h2", "h3", "h4"]
 tags:
 -
-series:
--
 categories:
+-
+series:
 -
 image:
 ---

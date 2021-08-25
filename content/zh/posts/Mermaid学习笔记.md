@@ -11,11 +11,13 @@ tocLevels: ["h2", "h3", "h4"]
 libraries:
 - mermaid
 tags:
--
-series:
--
+- "Markdown"
+- "Mermaid"
 categories:
--
+- "思维导图"
+series:
+- "方法手段"
+
 image:
 ---
 

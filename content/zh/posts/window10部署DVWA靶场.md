@@ -1,13 +1,21 @@
-+++
-date = "2019-04-13T22:38:04+08:00"
-categories = ["靶场"]
-tags = ["DVWA","win10"]
-
-title = "window10部署DVWA靶场"
-description = "靶场搭建"
-images = []
-
-+++
+---
+title: "window10部署DVWA靶场"
+date: 2019-04-13T22:38:04+08:00
+description: "简单的搭建方案"
+draft: false
+hideToc: false
+enableToc: true
+enableTocContent: false
+tocPosition: inner
+tocLevels: ["h2", "h3", "h4"]
+tags:
+- "靶场搭建"
+categories:
+- "渗透测试"
+series:
+- "技术研究"
+image: 
+---
 
 # 前言
 学习web渗透测试，必须要实践，像我这种初学者尤为必要。<br/>

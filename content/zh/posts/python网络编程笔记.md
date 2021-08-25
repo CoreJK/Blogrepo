@@ -9,12 +9,11 @@ enableTocContent: false
 tocPosition: inner
 tocLevels: ["h2", "h3", "h4"]
 tags:
-- "网络编程"
-- "python"
-series:
 - "python"
 categories:
-- "工作笔记"
+- "编程语言"
+series:
+- "技术研究"
 image:
 ---
 

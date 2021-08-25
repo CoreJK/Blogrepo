@@ -1,15 +1,23 @@
-+++
-date = "2019-07-22T16:01:16+08:00"
-categories = ["python"]
-tags = ["笔记"]
+---
+title: "这些猫全打包带走！还有猫粮！——zipfile模块"
+date: 2019-07-22T16:01:16+08:00
+description: "《python让繁琐的工作自动化》笔记"
+draft: false
+hideToc: false
+enableToc: true
+enableTocContent: false
+tocPosition: inner
+tocLevels: ["h2", "h3", "h4"]
+tags:
+- "python"
+categories:
+- "编程语言"
+series:
+- "技术研究"
+image: 
+---
 
-
-title = "这些猫全打包带走！还有猫粮！——zipfile模块"
-description = "《python让繁琐的工作自动化》笔记"
-images = []
-+++
-
-# 概述
+## 概述
 zipfile模块，是python内置的，用于处理 zip 压缩文件
 平常鼠标能干的，zipfile 提供的方法也都能干!
 不过大多数人还是愿意用鼠标来干... ...（小声）
@@ -18,8 +26,8 @@ zipfile模块，是python内置的，用于处理 zip 压缩文件
 根绝任务需要，构建脚本，可以实现例如备份重要数据的操作
 可以处理大量的文件，减少出错的概率，防止丢失可怜的薪资，顺便带走所有宠物，不然要 python 有何用？**
 
-# 使用方法
-## 实例
+## 使用方法
+### 实例
 ![压缩文件cats.zip的内容](https://ae01.alicdn.com/kf/U9e0e05c0f98b4651969344f6f4297c2fx.png)
 
 ### 一、创建新的压缩文件，并添加内容
@@ -70,7 +78,8 @@ ok, 打包完成
 >>> cats_zip.extractall("C:\\Desktop")
 >>> cats_zip.extract('spam.txt', "C\\Desktop")
 ```
-# 总结
+
+## 总结
 - zipfile.ZipFile() 调用时模块名后，要注意是大写！
 - python 中，文件是对象、zip是对象... ...而且两者的操作类似
 - 打开后记得 **文件对象.close()**， 或者用 with ... as ...，就省心多了

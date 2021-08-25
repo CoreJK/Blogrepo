@@ -1,13 +1,21 @@
-+++
-date = "2019-07-22T16:06:07+08:00"
-categories = ["python"]
-tags = ["笔记"]
-
-
-title = "python3 读取中文文件报错"
-description = "《python让繁琐的工作自动化》笔记"
-images = []
-+++
+---
+title: "python3 读取中文文件报错"
+date: 2019-07-22T16:06:07+08:00
+description: "《python让繁琐的工作自动化》笔记"
+draft: false
+hideToc: false
+enableToc: true
+enableTocContent: false
+tocPosition: inner
+tocLevels: ["h2", "h3", "h4"]
+tags:
+- "python"
+categories:
+- "编程语言"
+series:
+- "技术研究"
+image: 
+---
 
 尝试读取car.txt，内容是中文，结果报错了
 ```
@@ -17,7 +25,7 @@ Traceback (most recent call last):
 UnicodeDecodeError: 'gbk' codec can't decode byte 0xa1 in position 4: illegal mu
 ltibyte sequence
 ```
-# 问题代码
+## 问题代码
 
 ```
 cars = open(r".\car.txt")
@@ -27,7 +35,7 @@ print("完成！")
 
 cars.close()
 ```
-# 解决方法
+## 解决方法
 - open函数可选参数
 ```
 open(file, mode='r', buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None)

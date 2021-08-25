@@ -1,13 +1,22 @@
-+++
-date = "2020-05-29T9:40:20+08:00"
-categories = ["python"]
-tags = ["ffmpeg","笔记"]
-
-title = "bilibili缓存音视频合并脚本"
-description = "这一次编写脚本，总结了一些实用的经验，以及一些应该改进的习惯"
-images = []
-
-+++
+---
+title: "bilibili缓存音视频合并脚本"
+date: 2020-05-29T9:40:20+08:00
+description: "这一次编写脚本，总结了一些实用的经验，以及一些应该改进的习惯"
+draft: false
+hideToc: false
+enableToc: true
+enableTocContent: false
+tocPosition: inner
+tocLevels: ["h2", "h3", "h4"]
+tags:
+- "python"
+- "ffmpeg"
+categories:
+- "编程语言"
+series:
+- "技术研究"
+image: 
+---
 
 ## 一、前言
 

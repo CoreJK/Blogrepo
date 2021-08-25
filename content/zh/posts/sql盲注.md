@@ -1,16 +1,25 @@
-+++
-date = "2020-03-08T10:08:54+08:00"
-categories = ["工具笔记"]
-tags = ["sql注入","Burpsuit"]
+---
+title: "Sql 盲注好帮手，Burpsuit"
+date: 2020-03-08T10:08:54+08:00
+description: "Burpsuite 盲注出 cmd5 数据"
+draft: false
+hideToc: false
+enableToc: true
+enableTocContent: false
+tocPosition: inner
+tocLevels: ["h2", "h3", "h4"]
+tags:
+- "Burpsuit"
+- "sql注入"
+categories:
+- "渗透测试"
+series:
+- "工具使用"
+image: 
+---
 
-title = "Sql 盲注好帮手，Burpsuit"
-description = "Burpsuite 盲注出 cmd5 数据"
-images = []
 
-+++
-
-
-# 环境
+## 环境
 
 - windows 10
 - DVWA靶场，等级 low，Get型 / 单引号盲注
@@ -28,7 +37,7 @@ images = []
 这时候就需要借助 Burpsuite 内的 Intruder 模块
 构建适合猜解 cmd5 的 payload
 
-# 确定密码的长度
+## 确定密码的长度
 
 选择 Battering ram 的攻击类型，选中需要爆破的参数位置
 
@@ -44,7 +53,7 @@ images = []
 
 
 
-# 爆破出 password 的字段值
+## 爆破出 password 的字段值
 
 我们大胆猜测，密码是 cmd5 的格式
 
@@ -70,7 +79,7 @@ images = []
 
 ![爆破出密码的cmd5值](https://ae01.alicdn.com/kf/U0db5b93b18654e81a4f141b962547fe1Y.jpg)
 
-# 写在最后
+## 写在最后
 
 这次的练习，暴露出自己对于 Burpsuite 的 Iturder 模块的生疏
 但是通过查询资料和求助大佬得知
