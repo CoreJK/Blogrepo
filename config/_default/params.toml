@@ -44,7 +44,7 @@ pubPaginate = 20
 
 # whoami
 myname = "求余"
-email = "corejk@163.com"
+email = "corejk@protonmail.com"
 whoami = "python后端 物联网 网安爱好者"
 bioImageUrl = "https://secure.gravatar.com/avatar/"
 useGravatar = true
