@@ -31,14 +31,16 @@ image:
 备份的zip文件，放入back_up 文件夹中
 
 ## 代码实现思路
+
 ① \#TODO: 导入 zipfile, os 模块
-```
+```python
 #!python3
 import os
 import zipfile
 ```
+
 ② \#TODO: 检测 back_up 目录下，是否存在同名压缩文件，存在则生成n+1的新文件名
-```
+```python
 number = 1
 while True:
 	zipFilename = os.path.basename(folder) + '_' + str(number) + '.zip'
@@ -46,12 +48,14 @@ while True:
 		break
 	number = number + 1
 ```
+
 ③ \#TODO: 以 'w' 新建一个压缩文件，用 ② 的 zipFilename 命名
-```
+```python
 with zipfile.ZipFile(zipFilename, 'w') as backZip:
 ```
+
 ④ \#TODO: 接下来，遍历要压缩的目录，把每一个目录，和其下的文件都写入压缩文件
-```
+```python
 #os.walk()遍历每一个目录下的文件
     for folderName, subfolders, filenames in os.walk(folder):
 	    print('当前目录下文件正在压缩 %s ...' % (folderName))
@@ -61,18 +65,19 @@ with zipfile.ZipFile(zipFilename, 'w') as backZip:
 	    for filename in filenames:
 		    backupZip.write(os.path.join(folderName, filename))
 ```
+
 ⑤ \#TODO: 提示完成
-```
+```python
 print("[!] 备份完成.")
 ```
+
 ## 整理代码
-```
+```python
 #!python3
 #backupToZip.py - 备份任意目录下所有文件，到 back_up 文件夹中
 
 import sys, os, time
 import zipfile
-
 
 def backupToZip(folder):
 	#备份输入的目录下的所有内容
@@ -110,13 +115,14 @@ if __name__ == '__main__':
 - 和文件有关的操作，要记得检查**路径、文件夹或文件**是否存在、是否有**权限（r,w,x）**等
 下面这段，通常用来判断
 **文件不存在、没有权限等情况，执行 if 内的代码，要么报错，要么放心的去做其他的事情**
-```
+```python
 if not os的<文件夹、文件>检查方法:
     pass
 ```
+
 - 检查文件，是否以 "xxx" 名字开始，并且以某种后缀结尾
 **下面这段，检查文件是否为 xxx.zip 文件** 
-```
+```python
 if filename.startswith("xxx") and filename.endswith('.zip'):
     pass
 ```

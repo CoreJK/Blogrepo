@@ -44,12 +44,12 @@ pubPaginate = 20
 
 # whoami
 myname = "求余"
-email = "corejk@protonmail.com"
-whoami = "Web 安全，物联网"
+email = "corejk@163.com"
+whoami = "python后端 物联网 网安爱好者"
 bioImageUrl = "https://secure.gravatar.com/avatar/"
 useGravatar = true
-location = "银河, 火星"
-organization = "暂时没有"
+location = "湖南 · 长沙"
+organization = "湖南云之翼"
 link = "https://corejk.top"
 
 # sidebar

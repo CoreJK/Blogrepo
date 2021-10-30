@@ -25,21 +25,21 @@ image:
 
 ## 一、检查文件是否存在于当前路径
 
-```
+```python
 os.path.isfile(<filename>)
 ```
 **如果存在，返回True，反之False**
 
 ## 二、检查当前文件是否具有读取权限
 
-```
+```python
 os.access(<filename>, os.R_OK)
 ```
 **如果具有该权限，返回True，反之False**
 
 ## 三、例子
 
-```
+```python
 #! python2
 import sys
 import os
@@ -64,10 +64,13 @@ with open(filename, 'r') as f: #打开文件，并逐行读取，输出在屏幕
 ```
 
 ## 四、总结
-## 1. if not False :等价于 if True：
 
-```
+### 1. if not False :等价于 if True：
+
+```python
 if not os.path.isfile(filename):
 ```
+
 如果没有这个文件存在，则输出报错信息。
 **正所谓双重否定，表示肯定True。**
+

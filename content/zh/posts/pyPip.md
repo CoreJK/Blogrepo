@@ -38,12 +38,12 @@ image:
 会提示
 
 1.升级提示
-```cmd
+```bat
 "You are using pip version x.x.x, however version x.x.x is available.
 You should consider upgrading via the 'pip install --upgrade pip' command"
 ```
 2.正确姿势
-```cmd
+```bat
 python3 -m pip install --upgrade pip
 ```
 这样你就能正常的升级pip3了

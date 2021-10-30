@@ -24,8 +24,7 @@ image:
 以及，每一个文件夹内所包含的文件。
 
 ## 函数长这样
-```
-#!python3
+```python
 os.walk(<目录>)
 ```
 -  返回值：该方法没有返回值
@@ -37,8 +36,7 @@ os.walk(<目录>)
 ![目标文件夹.png](https://ae01.alicdn.com/kf/Ud5fa4f917fbf48d4a0f0b8702b71448bh.png)
 
 ## 代码
-```
-#!python3
+```python
 #walk.py - 用于遍历文件夹和子文件夹
 import os
 def walk_floders(folder=str(os.getcwd())): #默认获取脚本所在文件夹，传入os.walk()
@@ -68,7 +66,7 @@ if __name__ == '__main__':
 - 我写了一个 run.bat 可以方便启动脚本
 **将 run.bat 脚本放置到和要运行的脚本于同一目录下（要记得把放 run.bat 的脚本的文件夹，添加到系统环境变量中去）
 或者，如下，指定要运行脚本的放置路径**
-```
+```bat
 @python3.exe D:\py\Auto\walk.py %*
 @pause
 ```

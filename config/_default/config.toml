@@ -9,10 +9,10 @@ hasCJKLanguage = true
 summaryLength = 70
 buildFuture = true
 
-copyright = "&copy;{year}, All Rights Reserved"
+copyright = "&copy;{year} 求余, All Rights Reserved"
 timeout = 10000
 enableEmoji = true
-paginate = 13
+paginate = 10
 rssLimit = 100
 viewportSize = "normal"
 

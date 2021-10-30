@@ -61,7 +61,7 @@ d3f7d3f7d3f7
 ## 代码实例
 ### ① 将要处理的数据，读取出来；
 
-```
+```python
 #!python3
 with open("stds.keys") as file: 
 	all_keys = file.readlines()
@@ -69,7 +69,7 @@ with open("stds.keys") as file:
 
 ### ② 根据任务需要，我要先去除重复数据,降序排列，再交给接下来的函数去写入不同的新文件；
 
-```
+```python
 tmp = list(sorted(set(all_keys), reverse=True))
 >>> 交给写好的 separate() 函数去处理，
 separate(tmp, 100)                                           
@@ -77,7 +77,7 @@ separate(tmp, 100)
 
 ### ③ 函数中的代码，会根据列表的中的数据多少，每个文件写入多少数据，生成合理新文件数量；
 
-```
+```python
 >>> 这里我用了logging模块来调试
 logging.basicConfig(level=logging.DEBUG, format="%(asctime)s - [%(levelname)s] - %(message)s")
 #logging.disable(logging.CRITICAL)
@@ -113,7 +113,7 @@ def separate(key_list, write_key_num):
 
 ## 最后整理&效果
 
-```
+```python
 #!python3
 #filter.py - 把文件中的内容分割，然后分别保存到几个文件中
 

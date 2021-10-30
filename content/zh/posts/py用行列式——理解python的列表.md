@@ -44,14 +44,14 @@ Data = [['apples','oranges','cherries','banana'], ['Alice','Bob','Carol','David'
 ## 目标：
 ### 一、逐列输出（仍然是横向显示的），一列打印完后，换行继续打印
 
-```
+```python
   apples Alice dogs
  oranges Bob   cats
 cherries Carol moose
   banana David goose
 ```
 - **代码如下**
-```
+```python
 #! python3
 1 for col in range(len(data[0])): 
 2	  for row in range(len(data)):
@@ -61,7 +61,7 @@ cherries Carol moose
 ---
 ### 二、逐行输出，输出一行，换行继续打印
 
-```
+```python
 apples oranges cherries banana
 Alice Bob Carol David
 dogs cats moose goose
@@ -69,7 +69,7 @@ dogs cats moose goose
 
 - **代码如下**
 
-```
+```python
 #! python3
 1 for row in range(len(data)): 
 2	  for col in range(len(data[0])):
@@ -81,8 +81,9 @@ dogs cats moose goose
 - 两段代码，其实只把第一行和第二行交换了。
 - 一句话，逐行读取先for row，逐列读取就for col !
 - 获取内层列表的下标，可以这样写
-```
+```python
 for col in range(len(data[0])):
 ```
 
 **当然，上面的例子比较特殊，内层列表的长度都是4**
+

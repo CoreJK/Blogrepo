@@ -40,7 +40,7 @@ image:
 
 - 实例代码功能，计算“数的阶乘”；
 
-```
+```python
 #!python3
 def factorial(n):
 	total = 1
@@ -54,12 +54,12 @@ print('7! = ' + str(factorial(7)))
 一开始 i 被赋值为 0，total * i 就等于零，会导致最终结果等于零，这显然是不正确的**
 **正常代码结果**
 
-```
+```python
 5! = 1 * 2 * 3 * 4 * 5 = 120
 ```
 **异常代码结果**
 
-```
+```python
 5! = 0 * 2 * 3 * 4 * 5 = 0
 ```
 **现在来调试代码可能存在的问题，就要看 i 每一次的变量值，和 total 相应的结果。**
@@ -71,7 +71,7 @@ print('7! = ' + str(factorial(7)))
 
 ### 一、基本用法
 
-```
+```python
 #!python3
 import logging
 logging.basicConfig(
@@ -114,7 +114,7 @@ logging.debug('程序结束.')
 所以，我们可以看出，i 变量的数值从一开始就是 0 ,所以我们尽快定位问题所在。
 并修改代码为
 
-``` 
+```python
 for i in rang(1, n+1):
 ```
 
@@ -129,7 +129,7 @@ for i in rang(1, n+1):
 
 ### 三、将debug日志写到文件中
 
-```
+```python
 logging.basicConfig(filename='D:\\py\\Auto\\debug\\myProgramLog.txt',
 					level=logging.DEBUG, 
 					format="%(asctime)s - [%(levelname)s] - %(message)s")
@@ -139,7 +139,7 @@ logging.basicConfig(filename='D:\\py\\Auto\\debug\\myProgramLog.txt',
 ### 四、调试"开关" 
 这个功能，才是以后不用 print 来调试的正真的关键
 
-```
+```python
 logging.disable(logging.CRITICAL)
 ```
 通常将它，放在 loggin.basicConfig() 下一行，并且先注释掉。（可以看下基本用法中的例子）
@@ -150,18 +150,18 @@ logging.disable(logging.CRITICAL)
 - logging.disable(logging.CRITICAL)，会禁止显示，当前级别，以及比当前级别低的调试信息。
 - format 可以自定义消息输出的格式
 
-```
+```python
 logging.basicConfig(
                     level=logging.DEBUG, 
                     format="%(asctime)s - [%(levelname)s] - %(message)s"
                     )
 ```
 **format 设置好后字符串格式后，如下输出**
-```
+```python
 2019-07-16 20:28:45,073 - [DEBUG] - i 为 0, total 为 0
 ```
 
-```
+```python
 %(asctime)s --> 2019-07-16 20:28:45,073
 \-
 [%(levelname)s] --> [DEBUG]
