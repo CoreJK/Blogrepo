@@ -1,7 +1,7 @@
 ---
 title: "Python模块paramiko"
 date: 2022-05-02T21:18:00+08:00
-description:
+description: " 简单记录python paramiko 模拟ssh客户端的基本使用"
 draft: false
 hideToc: false
 enableToc: true
@@ -46,7 +46,7 @@ ssh_client = paramiko.SSHClient()
 >
 > 主机键是钥匙对，通常使用RSA，DSA或ECDSA算法。公共主机密钥存储在和/或分发给SSH客户端，私钥存储在SSH服务器上。[^2]
 
-因为，在计算机的世界里，没有用久的朋友-- IP 短时间里不会刷新，但是系统可能随时被重置
+因为，在计算机的世界里，没有永久的朋友-- IP 短时间里不会刷新，但是系统可能随时被重置
 
 ```python
 ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())  # 添加未知主机的 ssh 公钥
