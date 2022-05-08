@@ -96,7 +96,7 @@ ExecStop=/bin/kill -TERM $MAINPID
 ExecReload=/bin/kill -HUP $MAINPID
 Restart=always
 # 模块存放地址
-WorkingDirectory=/root/home/pakges
+WorkingDirectory=/root/home/packages
 
 TimeoutStartSec=3
 RestartSec=5
