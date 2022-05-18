@@ -1,7 +1,7 @@
 ---
 title: "内网 Pip  源搭建方案之 Pypiserver"
 date: 2022-05-08T16:46:23+08:00
-description:
+description: "通过 pypiserver 模块，在内网服务器上搭建 pip 源"
 draft: false
 hideToc: false
 enableToc: true
