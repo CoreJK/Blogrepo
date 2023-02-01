@@ -1,7 +1,9 @@
 ---
 title: "Python用json模块读取json文件乱序"
 date: 2023-02-01T22:47:57+08:00
-description:
+description: "当我们用 json.loads 读取了一份 Json 文件中的数据
+修改了某些键的值，再使用 json.dumps  将修改以后的数据，存入新的 json 文件时（序列化）
+可能会遇到所有的 key 值乱序的情况，怎么办呢？"
 draft: false
 hideToc: false
 enableToc: true
