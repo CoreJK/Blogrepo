@@ -1,7 +1,7 @@
 ---
-title: "Tools_share_SwitchHosts"
+title: "开源免费！跨平台修改系统 hosts 文件好帮手SwitchHosts"
 date: 2023-02-02T22:12:50+08:00
-description: "虽然修改 hosts 并不难，有没有更加快捷（懒）的方法呢？可以快速的切换不同的 **hosts** 配置信息呢?最好是还能 **windowns**、**linux**、**mac** 多平台使用~毕竟服务器一多，总有忘记和填写错误的时候XD 今天的主角就是 **SwitchHosts**，满足了所有需求!"
+description: "虽然修改 hosts 并不难，有没有更加快捷（懒）的方法呢？可以快速的切换不同的 hosts 配置信息呢?最好是还能 windowns 、 linux 、 mac 多平台使用~毕竟服务器一多，总有忘记和填写错误的时候XD 今天的主角就是 SwitchHosts ，满足了所有需求!"
 draft: false
 hideToc: false
 enableToc: true
