@@ -1,5 +1,5 @@
 ---
-title: "python 利用生产器处理大于内存的 csv 文件数据"
+title: "python 利用生成器处理大于内存的 csv 文件数据"
 date: 2023-02-06T22:25:43+08:00
 description: "当两个 csv 文件总大小，大于计算机的运行内存，用 python 如何同时，循环读取两个 csv 文件中的一行数据？"
 draft: false
