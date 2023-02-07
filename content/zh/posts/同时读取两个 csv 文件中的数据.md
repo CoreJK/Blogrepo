@@ -114,8 +114,9 @@ B_file: 90
 ```python
 imoprt csv
 
-A_file = get_csv_data("A.csv")
-B_file = get_csv_data("B.csv")
+# 忽略 csv 的表头，直接从数据行开始读取
+A_file = get_csv_data("A.csv", ignore_header=True)
+B_file = get_csv_data("B.csv", ignore_header=True)
 
 # 如果两份文件的行数不一致，会以行数最少的 csv 文件为准
 # 列表推导式
