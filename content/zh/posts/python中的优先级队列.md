@@ -83,7 +83,7 @@ while not pq.empty():
 
 ```mermaid
 flowchart LR
-	ProducerThreadA & ProducerThread --> 优先级队列 --> ConsumerThread
+	ProducerThreadA & ProducerThreadB --> 优先级队列 --> ConsumerThread
 ```
 
 
